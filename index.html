@@ -23,7 +23,7 @@
 	<video playsinline autoplay></video>
 	<script>
 		"use strict";
-		navigator.mediaDevices.getUserMedia({audio: false, video: {height: {min: 720}}}).then(stream => {
+		navigator.mediaDevices.getUserMedia({audio: false, video: {width: {min: 1280}}}).then(stream => {
 			document.querySelector('video').srcObject = stream;
 		});
 	</script>
